@@ -1,11 +1,40 @@
 # Replication Package — Quarantining Environmentally Fragile LLM-Generated Tests
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB.svg)](https://www.python.org/)
+[![CI](https://github.com/forgemorrow/llm-test-generation-quarantine/actions/workflows/ci.yml/badge.svg)](https://github.com/forgemorrow/llm-test-generation-quarantine/actions/workflows/ci.yml)
+
 Artifact for the manuscript:
 
 > **Quarantining Environmentally Fragile LLM-Generated Tests: A Project-Level Empirical Study on SWE-bench Verified**
 > Chaoyi Zhu, Qilu Normal University — submitted to *Journal of Systems and Software*
 
 This repository contains everything needed to inspect and re-run the study: the static AST risk screener, the dynamic shuffle profiler, the four-tier triage implementation, the socket-guard instrumentation used for hermetic CI, all experiment drivers, and the archived formal run.
+
+## Pipeline Overview
+
+```mermaid
+flowchart LR
+    A[LLM-Generated Tests] --> B[Static AST Risk Screener]
+    B --> C[Dynamic Shuffle Profiler]
+    C --> D{Four-Tier Triage}
+    D -->|TIER_1_SAFE_KEEP| E[KEEP in Hermetic Mainline CI]
+    D -->|TIER_2_DUAL_PURPOSE| F[QUARANTINE_INSPECT]
+    D -->|TIER_3_SAFE_LOW| G[OPTIONAL Pool]
+    D -->|TIER_4_SPURIOUS| H[DISCARD]
+```
+
+## Quick Verification
+
+Run the offline verification suite without cloning the excluded 520 MB upstream repositories (tests gated on `data/repos/` skip automatically):
+
+```bash
+pip install pytest requests
+python -m compileall -q src tests
+pytest tests/ -v
+```
+
+For full SWE-bench replication steps and checksum verification, see [REPLICATION.md](REPLICATION.md) and [PACKAGE_CONTENTS.md](PACKAGE_CONTENTS.md).
 
 ## What is here
 
