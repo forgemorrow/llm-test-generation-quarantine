@@ -1,0 +1,1629 @@
+{
+  "rq1_funnel": {
+    "qwen3_8b_all17": {
+      "instances": 17,
+      "files_total": 50,
+      "syn_err_files": 0,
+      "syn_err_regex_defs": 0,
+      "zero_fn_files": 7,
+      "zero_fn_subcats": {
+        "Top-Level Script (no def test_)": 5,
+        "Markdown/Prose Dump": 1,
+        "Empty/Definitions Only": 1
+      },
+      "clean_parse_files_with_tests": 43,
+      "coll_error_files_with_ast": 10,
+      "attempted_total_defs": 423,
+      "raw_ast_defs": 423,
+      "shadowed_defs": 2,
+      "effective_ast_defs": 421,
+      "coll_loss_in_failed_files": 113,
+      "param_expansion_extra": 0,
+      "collected": 308,
+      "pass_open": 113,
+      "pass_open_pct_coll": 36.69,
+      "pass_open_ci_coll": [
+        31.5,
+        42.2
+      ],
+      "pass_open_pct_eff_ast": 26.84,
+      "pass_open_ci_eff_ast": [
+        22.83,
+        31.27
+      ],
+      "pass_herm": 103,
+      "pass_herm_pct_coll": 33.44,
+      "pass_herm_ci_coll": [
+        28.41,
+        38.89
+      ],
+      "pass_herm_pct_eff_ast": 24.47,
+      "pass_herm_ci_eff_ast": [
+        20.6,
+        28.79
+      ],
+      "net_viol": 24,
+      "net_viol_pct_coll": 7.79,
+      "bug_det_open": 14,
+      "bug_det_herm": 14,
+      "bug_insts_open": [
+        "pallets__flask-5014",
+        "psf__requests-1921",
+        "sympy__sympy-15809"
+      ],
+      "per_instance": {
+        "psf__requests-1724": {
+          "effective_ast": 15,
+          "collected": 15,
+          "pass_open": 2,
+          "pass_herm": 2,
+          "net_viol": 9,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-1766": {
+          "effective_ast": 45,
+          "collected": 45,
+          "pass_open": 10,
+          "pass_herm": 10,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-1921": {
+          "effective_ast": 30,
+          "collected": 30,
+          "pass_open": 13,
+          "pass_herm": 13,
+          "net_viol": 0,
+          "bug_det_open": 4,
+          "bug_det_herm": 4
+        },
+        "psf__requests-2317": {
+          "effective_ast": 23,
+          "collected": 23,
+          "pass_open": 11,
+          "pass_herm": 1,
+          "net_viol": 15,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-6028": {
+          "effective_ast": 38,
+          "collected": 26,
+          "pass_open": 9,
+          "pass_herm": 9,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pallets__flask-5014": {
+          "effective_ast": 37,
+          "collected": 37,
+          "pass_open": 11,
+          "pass_herm": 11,
+          "net_viol": 0,
+          "bug_det_open": 4,
+          "bug_det_herm": 4
+        },
+        "sympy__sympy-15809": {
+          "effective_ast": 32,
+          "collected": 32,
+          "pass_open": 23,
+          "pass_herm": 23,
+          "net_viol": 0,
+          "bug_det_open": 6,
+          "bug_det_herm": 6
+        },
+        "sympy__sympy-17630": {
+          "effective_ast": 10,
+          "collected": 9,
+          "pass_open": 3,
+          "pass_herm": 3,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-21930": {
+          "effective_ast": 30,
+          "collected": 30,
+          "pass_open": 20,
+          "pass_herm": 20,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4075": {
+          "effective_ast": 36,
+          "collected": 22,
+          "pass_open": 7,
+          "pass_herm": 7,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4356": {
+          "effective_ast": 25,
+          "collected": 25,
+          "pass_open": 1,
+          "pass_herm": 1,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4966": {
+          "effective_ast": 33,
+          "collected": 1,
+          "pass_open": 1,
+          "pass_herm": 1,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-6744": {
+          "effective_ast": 13,
+          "collected": 13,
+          "pass_open": 2,
+          "pass_herm": 2,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-17139": {
+          "effective_ast": 15,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-22080": {
+          "effective_ast": 0,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-6992": {
+          "effective_ast": 13,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pytest-dev__pytest-7521": {
+          "effective_ast": 26,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        }
+      }
+    },
+    "qwen3_8b_core13": {
+      "instances": 13,
+      "files_total": 39,
+      "syn_err_files": 0,
+      "syn_err_regex_defs": 0,
+      "zero_fn_files": 2,
+      "zero_fn_subcats": {
+        "Top-Level Script (no def test_)": 1,
+        "Markdown/Prose Dump": 1
+      },
+      "clean_parse_files_with_tests": 37,
+      "coll_error_files_with_ast": 4,
+      "attempted_total_defs": 369,
+      "raw_ast_defs": 369,
+      "shadowed_defs": 2,
+      "effective_ast_defs": 367,
+      "coll_loss_in_failed_files": 59,
+      "param_expansion_extra": 0,
+      "collected": 308,
+      "pass_open": 113,
+      "pass_open_pct_coll": 36.69,
+      "pass_open_ci_coll": [
+        31.5,
+        42.2
+      ],
+      "pass_open_pct_eff_ast": 30.79,
+      "pass_open_ci_eff_ast": [
+        26.29,
+        35.69
+      ],
+      "pass_herm": 103,
+      "pass_herm_pct_coll": 33.44,
+      "pass_herm_ci_coll": [
+        28.41,
+        38.89
+      ],
+      "pass_herm_pct_eff_ast": 28.07,
+      "pass_herm_ci_eff_ast": [
+        23.71,
+        32.87
+      ],
+      "net_viol": 24,
+      "net_viol_pct_coll": 7.79,
+      "bug_det_open": 14,
+      "bug_det_herm": 14,
+      "bug_insts_open": [
+        "pallets__flask-5014",
+        "psf__requests-1921",
+        "sympy__sympy-15809"
+      ],
+      "per_instance": {
+        "psf__requests-1724": {
+          "effective_ast": 15,
+          "collected": 15,
+          "pass_open": 2,
+          "pass_herm": 2,
+          "net_viol": 9,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-1766": {
+          "effective_ast": 45,
+          "collected": 45,
+          "pass_open": 10,
+          "pass_herm": 10,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-1921": {
+          "effective_ast": 30,
+          "collected": 30,
+          "pass_open": 13,
+          "pass_herm": 13,
+          "net_viol": 0,
+          "bug_det_open": 4,
+          "bug_det_herm": 4
+        },
+        "psf__requests-2317": {
+          "effective_ast": 23,
+          "collected": 23,
+          "pass_open": 11,
+          "pass_herm": 1,
+          "net_viol": 15,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-6028": {
+          "effective_ast": 38,
+          "collected": 26,
+          "pass_open": 9,
+          "pass_herm": 9,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pallets__flask-5014": {
+          "effective_ast": 37,
+          "collected": 37,
+          "pass_open": 11,
+          "pass_herm": 11,
+          "net_viol": 0,
+          "bug_det_open": 4,
+          "bug_det_herm": 4
+        },
+        "sympy__sympy-15809": {
+          "effective_ast": 32,
+          "collected": 32,
+          "pass_open": 23,
+          "pass_herm": 23,
+          "net_viol": 0,
+          "bug_det_open": 6,
+          "bug_det_herm": 6
+        },
+        "sympy__sympy-17630": {
+          "effective_ast": 10,
+          "collected": 9,
+          "pass_open": 3,
+          "pass_herm": 3,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-21930": {
+          "effective_ast": 30,
+          "collected": 30,
+          "pass_open": 20,
+          "pass_herm": 20,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4075": {
+          "effective_ast": 36,
+          "collected": 22,
+          "pass_open": 7,
+          "pass_herm": 7,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4356": {
+          "effective_ast": 25,
+          "collected": 25,
+          "pass_open": 1,
+          "pass_herm": 1,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4966": {
+          "effective_ast": 33,
+          "collected": 1,
+          "pass_open": 1,
+          "pass_herm": 1,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-6744": {
+          "effective_ast": 13,
+          "collected": 13,
+          "pass_open": 2,
+          "pass_herm": 2,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        }
+      }
+    },
+    "qwen25_7b_core13": {
+      "instances": 13,
+      "files_total": 39,
+      "syn_err_files": 1,
+      "syn_err_regex_defs": 0,
+      "zero_fn_files": 7,
+      "zero_fn_subcats": {
+        "Top-Level Script (no def test_)": 7
+      },
+      "clean_parse_files_with_tests": 31,
+      "coll_error_files_with_ast": 11,
+      "attempted_total_defs": 282,
+      "raw_ast_defs": 282,
+      "shadowed_defs": 0,
+      "effective_ast_defs": 282,
+      "coll_loss_in_failed_files": 87,
+      "param_expansion_extra": 6,
+      "collected": 201,
+      "pass_open": 64,
+      "pass_open_pct_coll": 31.84,
+      "pass_open_ci_coll": [
+        25.79,
+        38.57
+      ],
+      "pass_open_pct_eff_ast": 22.7,
+      "pass_open_ci_eff_ast": [
+        18.19,
+        27.93
+      ],
+      "pass_herm": 62,
+      "pass_herm_pct_coll": 30.85,
+      "pass_herm_ci_coll": [
+        24.87,
+        37.54
+      ],
+      "pass_herm_pct_eff_ast": 21.99,
+      "pass_herm_ci_eff_ast": [
+        17.55,
+        27.18
+      ],
+      "net_viol": 6,
+      "net_viol_pct_coll": 2.99,
+      "bug_det_open": 0,
+      "bug_det_herm": 0,
+      "bug_insts_open": [],
+      "per_instance": {
+        "psf__requests-1724": {
+          "effective_ast": 21,
+          "collected": 21,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-1766": {
+          "effective_ast": 17,
+          "collected": 17,
+          "pass_open": 4,
+          "pass_herm": 4,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-1921": {
+          "effective_ast": 35,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-2317": {
+          "effective_ast": 26,
+          "collected": 26,
+          "pass_open": 17,
+          "pass_herm": 15,
+          "net_viol": 6,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-6028": {
+          "effective_ast": 16,
+          "collected": 8,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pallets__flask-5014": {
+          "effective_ast": 4,
+          "collected": 4,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-15809": {
+          "effective_ast": 12,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-17630": {
+          "effective_ast": 0,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-21930": {
+          "effective_ast": 2,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4075": {
+          "effective_ast": 43,
+          "collected": 43,
+          "pass_open": 4,
+          "pass_herm": 4,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4356": {
+          "effective_ast": 60,
+          "collected": 52,
+          "pass_open": 38,
+          "pass_herm": 38,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4966": {
+          "effective_ast": 44,
+          "collected": 30,
+          "pass_open": 1,
+          "pass_herm": 1,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-6744": {
+          "effective_ast": 2,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        }
+      }
+    },
+    "deepseek_coder_67b_core13": {
+      "instances": 13,
+      "files_total": 39,
+      "syn_err_files": 5,
+      "syn_err_regex_defs": 73,
+      "zero_fn_files": 0,
+      "zero_fn_subcats": {},
+      "clean_parse_files_with_tests": 34,
+      "coll_error_files_with_ast": 9,
+      "attempted_total_defs": 361,
+      "raw_ast_defs": 288,
+      "shadowed_defs": 58,
+      "effective_ast_defs": 230,
+      "coll_loss_in_failed_files": 41,
+      "param_expansion_extra": 0,
+      "collected": 189,
+      "pass_open": 90,
+      "pass_open_pct_coll": 47.62,
+      "pass_open_ci_coll": [
+        40.62,
+        54.72
+      ],
+      "pass_open_pct_eff_ast": 39.13,
+      "pass_open_ci_eff_ast": [
+        33.05,
+        45.57
+      ],
+      "pass_herm": 61,
+      "pass_herm_pct_coll": 32.28,
+      "pass_herm_ci_coll": [
+        26.02,
+        39.24
+      ],
+      "pass_herm_pct_eff_ast": 26.52,
+      "pass_herm_ci_eff_ast": [
+        21.24,
+        32.58
+      ],
+      "net_viol": 45,
+      "net_viol_pct_coll": 23.81,
+      "bug_det_open": 0,
+      "bug_det_herm": 0,
+      "bug_insts_open": [],
+      "per_instance": {
+        "psf__requests-1724": {
+          "effective_ast": 27,
+          "collected": 27,
+          "pass_open": 14,
+          "pass_herm": 12,
+          "net_viol": 14,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-1766": {
+          "effective_ast": 14,
+          "collected": 14,
+          "pass_open": 2,
+          "pass_herm": 2,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-1921": {
+          "effective_ast": 14,
+          "collected": 14,
+          "pass_open": 12,
+          "pass_herm": 4,
+          "net_viol": 10,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-2317": {
+          "effective_ast": 22,
+          "collected": 22,
+          "pass_open": 19,
+          "pass_herm": 0,
+          "net_viol": 21,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-6028": {
+          "effective_ast": 20,
+          "collected": 5,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pallets__flask-5014": {
+          "effective_ast": 19,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-15809": {
+          "effective_ast": 3,
+          "collected": 2,
+          "pass_open": 1,
+          "pass_herm": 1,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-17630": {
+          "effective_ast": 5,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-21930": {
+          "effective_ast": 1,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4075": {
+          "effective_ast": 24,
+          "collected": 24,
+          "pass_open": 12,
+          "pass_herm": 12,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4356": {
+          "effective_ast": 44,
+          "collected": 44,
+          "pass_open": 25,
+          "pass_herm": 25,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4966": {
+          "effective_ast": 30,
+          "collected": 30,
+          "pass_open": 5,
+          "pass_herm": 5,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-6744": {
+          "effective_ast": 7,
+          "collected": 7,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        }
+      }
+    },
+    "codellama_7b_core13": {
+      "instances": 13,
+      "files_total": 39,
+      "syn_err_files": 3,
+      "syn_err_regex_defs": 25,
+      "zero_fn_files": 15,
+      "zero_fn_subcats": {
+        "Source Code Paraphrase/Helper": 7,
+        "Top-Level Script (no def test_)": 5,
+        "Empty/Definitions Only": 3
+      },
+      "clean_parse_files_with_tests": 21,
+      "coll_error_files_with_ast": 3,
+      "attempted_total_defs": 128,
+      "raw_ast_defs": 103,
+      "shadowed_defs": 0,
+      "effective_ast_defs": 103,
+      "coll_loss_in_failed_files": 26,
+      "param_expansion_extra": 0,
+      "collected": 77,
+      "pass_open": 25,
+      "pass_open_pct_coll": 32.47,
+      "pass_open_ci_coll": [
+        23.06,
+        43.54
+      ],
+      "pass_open_pct_eff_ast": 24.27,
+      "pass_open_ci_eff_ast": [
+        17.02,
+        33.38
+      ],
+      "pass_herm": 24,
+      "pass_herm_pct_coll": 31.17,
+      "pass_herm_ci_coll": [
+        21.93,
+        42.2
+      ],
+      "pass_herm_pct_eff_ast": 23.3,
+      "pass_herm_ci_eff_ast": [
+        16.19,
+        32.33
+      ],
+      "net_viol": 1,
+      "net_viol_pct_coll": 1.3,
+      "bug_det_open": 0,
+      "bug_det_herm": 0,
+      "bug_insts_open": [],
+      "per_instance": {
+        "psf__requests-1724": {
+          "effective_ast": 3,
+          "collected": 3,
+          "pass_open": 2,
+          "pass_herm": 2,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-1766": {
+          "effective_ast": 25,
+          "collected": 18,
+          "pass_open": 6,
+          "pass_herm": 6,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-1921": {
+          "effective_ast": 3,
+          "collected": 3,
+          "pass_open": 1,
+          "pass_herm": 0,
+          "net_viol": 1,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-2317": {
+          "effective_ast": 3,
+          "collected": 3,
+          "pass_open": 2,
+          "pass_herm": 2,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "psf__requests-6028": {
+          "effective_ast": 0,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pallets__flask-5014": {
+          "effective_ast": 0,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-15809": {
+          "effective_ast": 0,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-17630": {
+          "effective_ast": 0,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "sympy__sympy-21930": {
+          "effective_ast": 0,
+          "collected": 0,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4075": {
+          "effective_ast": 20,
+          "collected": 5,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4356": {
+          "effective_ast": 36,
+          "collected": 36,
+          "pass_open": 14,
+          "pass_herm": 14,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-4966": {
+          "effective_ast": 12,
+          "collected": 8,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        },
+        "pydata__xarray-6744": {
+          "effective_ast": 1,
+          "collected": 1,
+          "pass_open": 0,
+          "pass_herm": 0,
+          "net_viol": 0,
+          "bug_det_open": 0,
+          "bug_det_herm": 0
+        }
+      }
+    }
+  },
+  "rq1_stats": {
+    "collected_count": {
+      "friedman_chi2": 9.3277,
+      "friedman_p": 0.025236,
+      "pairwise_wilcoxon": [
+        {
+          "pair": "qwen3_8b_vs_qwen25_7b",
+          "W": 25.0,
+          "raw_p": 0.162842,
+          "holm_p": 0.370605
+        },
+        {
+          "pair": "qwen3_8b_vs_deepseek_coder_67b",
+          "W": 23.0,
+          "raw_p": 0.123535,
+          "holm_p": 0.370605
+        },
+        {
+          "pair": "qwen3_8b_vs_codellama_7b",
+          "W": 4.0,
+          "raw_p": 0.001465,
+          "holm_p": 0.008789
+        },
+        {
+          "pair": "qwen25_7b_vs_deepseek_coder_67b",
+          "W": 23.0,
+          "raw_p": 0.685547,
+          "holm_p": 0.685547
+        },
+        {
+          "pair": "qwen25_7b_vs_codellama_7b",
+          "W": 6.0,
+          "raw_p": 0.025391,
+          "holm_p": 0.101562
+        },
+        {
+          "pair": "deepseek_coder_67b_vs_codellama_7b",
+          "W": 2.0,
+          "raw_p": 0.005859,
+          "holm_p": 0.029297
+        }
+      ]
+    },
+    "pass_open_count": {
+      "friedman_chi2": 12.6168,
+      "friedman_p": 0.005543,
+      "pairwise_wilcoxon": [
+        {
+          "pair": "qwen3_8b_vs_qwen25_7b",
+          "W": 17.5,
+          "raw_p": 0.097168,
+          "holm_p": 0.388672
+        },
+        {
+          "pair": "qwen3_8b_vs_deepseek_coder_67b",
+          "W": 38.5,
+          "raw_p": 0.647705,
+          "holm_p": 0.84375
+        },
+        {
+          "pair": "qwen3_8b_vs_codellama_7b",
+          "W": 10.0,
+          "raw_p": 0.02002,
+          "holm_p": 0.120117
+        },
+        {
+          "pair": "qwen25_7b_vs_deepseek_coder_67b",
+          "W": 9.5,
+          "raw_p": 0.265625,
+          "holm_p": 0.796875
+        },
+        {
+          "pair": "qwen25_7b_vs_codellama_7b",
+          "W": 8.5,
+          "raw_p": 0.421875,
+          "holm_p": 0.84375
+        },
+        {
+          "pair": "deepseek_coder_67b_vs_codellama_7b",
+          "W": 2.0,
+          "raw_p": 0.023438,
+          "holm_p": 0.120117
+        }
+      ]
+    },
+    "pass_herm_count": {
+      "friedman_chi2": 9.934,
+      "friedman_p": 0.019136,
+      "pairwise_wilcoxon": [
+        {
+          "pair": "qwen3_8b_vs_qwen25_7b",
+          "W": 21.0,
+          "raw_p": 0.169434,
+          "holm_p": 0.677734
+        },
+        {
+          "pair": "qwen3_8b_vs_deepseek_coder_67b",
+          "W": 31.0,
+          "raw_p": 0.330811,
+          "holm_p": 0.9375
+        },
+        {
+          "pair": "qwen3_8b_vs_codellama_7b",
+          "W": 11.0,
+          "raw_p": 0.026367,
+          "holm_p": 0.158203
+        },
+        {
+          "pair": "qwen25_7b_vs_deepseek_coder_67b",
+          "W": 17.0,
+          "raw_p": 0.90625,
+          "holm_p": 0.9375
+        },
+        {
+          "pair": "qwen25_7b_vs_codellama_7b",
+          "W": 5.0,
+          "raw_p": 0.3125,
+          "holm_p": 0.9375
+        },
+        {
+          "pair": "deepseek_coder_67b_vs_codellama_7b",
+          "W": 5.5,
+          "raw_p": 0.085938,
+          "holm_p": 0.429688
+        }
+      ]
+    }
+  },
+  "rq2_taxonomy": {
+    "qwen3_8b_all17": {
+      "collection_error_files_by_cat": {
+        "Hallucinated / Nonexistent Symbol or Module": 6,
+        "Placeholder Module Reference": 1,
+        "Relative Import Outside Package": 1,
+        "Build-Metadata / Infra Failure": 2
+      },
+      "collection_error_ast_lost_by_cat": {
+        "Hallucinated / Nonexistent Symbol or Module": 41,
+        "Placeholder Module Reference": 14,
+        "Relative Import Outside Package": 32,
+        "Build-Metadata / Infra Failure": 26
+      },
+      "fixed_open_failure_cats": {
+        "Other Runtime Error (UnicodeEncodeError)": 4,
+        "Unmet Exception Expectation (pytest.raises)": 22,
+        "API/State Runtime Error (TypeError)": 13,
+        "Other Runtime Error (EXCEPTION)": 2,
+        "Network/TLS/Proxy Error (MaxRetryError)": 1,
+        "Wrong Oracle (AssertionError)": 60,
+        "API/State Runtime Error (AttributeError)": 6,
+        "API/State Runtime Error (KeyError)": 18,
+        "API/State Runtime Error (ValueError)": 8,
+        "Other Runtime Error (UnboundLocalError)": 1,
+        "Other Runtime Error (UnicodeDecodeError)": 1,
+        "Undefined Symbol (NameError)": 43,
+        "Other Runtime Error (FileNotFoundError)": 1,
+        "Lazy Runtime ImportError": 12,
+        "Other Runtime Error (MissingDimensionsError)": 3
+      },
+      "fixed_hermetic_failure_cats": {
+        "Other Runtime Error (UnicodeEncodeError)": 4,
+        "Network/TLS/Proxy Error (OSError)": 24,
+        "Other Runtime Error (EXCEPTION)": 2,
+        "Network/TLS/Proxy Error (MaxRetryError)": 1,
+        "Wrong Oracle (AssertionError)": 53,
+        "API/State Runtime Error (AttributeError)": 6,
+        "API/State Runtime Error (KeyError)": 18,
+        "API/State Runtime Error (ValueError)": 8,
+        "Other Runtime Error (UnboundLocalError)": 1,
+        "Unmet Exception Expectation (pytest.raises)": 17,
+        "API/State Runtime Error (TypeError)": 11,
+        "Other Runtime Error (UnicodeDecodeError)": 1,
+        "Undefined Symbol (NameError)": 43,
+        "Other Runtime Error (FileNotFoundError)": 1,
+        "Lazy Runtime ImportError": 12,
+        "Other Runtime Error (MissingDimensionsError)": 3
+      }
+    },
+    "qwen3_8b_core13": {
+      "collection_error_files_by_cat": {
+        "Hallucinated / Nonexistent Symbol or Module": 2,
+        "Placeholder Module Reference": 1,
+        "Relative Import Outside Package": 1
+      },
+      "collection_error_ast_lost_by_cat": {
+        "Hallucinated / Nonexistent Symbol or Module": 13,
+        "Placeholder Module Reference": 14,
+        "Relative Import Outside Package": 32
+      },
+      "fixed_open_failure_cats": {
+        "Other Runtime Error (UnicodeEncodeError)": 4,
+        "Unmet Exception Expectation (pytest.raises)": 22,
+        "API/State Runtime Error (TypeError)": 13,
+        "Other Runtime Error (EXCEPTION)": 2,
+        "Network/TLS/Proxy Error (MaxRetryError)": 1,
+        "Wrong Oracle (AssertionError)": 60,
+        "API/State Runtime Error (AttributeError)": 6,
+        "API/State Runtime Error (KeyError)": 18,
+        "API/State Runtime Error (ValueError)": 8,
+        "Other Runtime Error (UnboundLocalError)": 1,
+        "Other Runtime Error (UnicodeDecodeError)": 1,
+        "Undefined Symbol (NameError)": 43,
+        "Other Runtime Error (FileNotFoundError)": 1,
+        "Lazy Runtime ImportError": 12,
+        "Other Runtime Error (MissingDimensionsError)": 3
+      },
+      "fixed_hermetic_failure_cats": {
+        "Other Runtime Error (UnicodeEncodeError)": 4,
+        "Network/TLS/Proxy Error (OSError)": 24,
+        "Other Runtime Error (EXCEPTION)": 2,
+        "Network/TLS/Proxy Error (MaxRetryError)": 1,
+        "Wrong Oracle (AssertionError)": 53,
+        "API/State Runtime Error (AttributeError)": 6,
+        "API/State Runtime Error (KeyError)": 18,
+        "API/State Runtime Error (ValueError)": 8,
+        "Other Runtime Error (UnboundLocalError)": 1,
+        "Unmet Exception Expectation (pytest.raises)": 17,
+        "API/State Runtime Error (TypeError)": 11,
+        "Other Runtime Error (UnicodeDecodeError)": 1,
+        "Undefined Symbol (NameError)": 43,
+        "Other Runtime Error (FileNotFoundError)": 1,
+        "Lazy Runtime ImportError": 12,
+        "Other Runtime Error (MissingDimensionsError)": 3
+      }
+    },
+    "qwen25_7b_core13": {
+      "collection_error_files_by_cat": {
+        "Hallucinated / Nonexistent Symbol or Module": 5,
+        "Top-Level Execution Error": 4,
+        "NumPy API Compatibility Error": 1,
+        "Relative Import Outside Package": 1
+      },
+      "collection_error_ast_lost_by_cat": {
+        "Hallucinated / Nonexistent Symbol or Module": 54,
+        "Top-Level Execution Error": 5,
+        "NumPy API Compatibility Error": 14,
+        "Relative Import Outside Package": 14
+      },
+      "fixed_open_failure_cats": {
+        "Undefined Symbol (NameError)": 63,
+        "Wrong Oracle (AssertionError)": 36,
+        "API/State Runtime Error (TypeError)": 8,
+        "API/State Runtime Error (AttributeError)": 7,
+        "API/State Runtime Error (KeyError)": 1,
+        "Network/TLS/Proxy Error (MaxRetryError)": 1,
+        "API/State Runtime Error (ValueError)": 14,
+        "Unmet Exception Expectation (pytest.raises)": 7
+      },
+      "fixed_hermetic_failure_cats": {
+        "Undefined Symbol (NameError)": 63,
+        "Wrong Oracle (AssertionError)": 36,
+        "API/State Runtime Error (TypeError)": 6,
+        "API/State Runtime Error (AttributeError)": 7,
+        "Network/TLS/Proxy Error (OSError)": 6,
+        "API/State Runtime Error (ValueError)": 14,
+        "Unmet Exception Expectation (pytest.raises)": 7
+      }
+    },
+    "deepseek_coder_67b_core13": {
+      "collection_error_files_by_cat": {
+        "Relative Import Outside Package": 1,
+        "Placeholder Module Reference": 4,
+        "Top-Level Execution Error": 3,
+        "Hallucinated / Nonexistent Symbol or Module": 1
+      },
+      "collection_error_ast_lost_by_cat": {
+        "Relative Import Outside Package": 6,
+        "Placeholder Module Reference": 28,
+        "Top-Level Execution Error": 6,
+        "Hallucinated / Nonexistent Symbol or Module": 1
+      },
+      "fixed_open_failure_cats": {
+        "API/State Runtime Error (ValueError)": 12,
+        "Other Runtime Error (FileNotFoundError)": 1,
+        "Network/TLS/Proxy Error (SSLCertVerificationError)": 10,
+        "Network/TLS/Proxy Error (ProxyError)": 1,
+        "Wrong Oracle (AssertionError)": 42,
+        "API/State Runtime Error (AttributeError)": 13,
+        "Undefined Symbol (NameError)": 12,
+        "API/State Runtime Error (TypeError)": 8
+      },
+      "fixed_hermetic_failure_cats": {
+        "API/State Runtime Error (ValueError)": 12,
+        "Network/TLS/Proxy Error (OSError)": 45,
+        "Wrong Oracle (AssertionError)": 38,
+        "API/State Runtime Error (AttributeError)": 13,
+        "Undefined Symbol (NameError)": 12,
+        "API/State Runtime Error (TypeError)": 8
+      }
+    },
+    "codellama_7b_core13": {
+      "collection_error_files_by_cat": {
+        "Hallucinated / Nonexistent Symbol or Module": 3
+      },
+      "collection_error_ast_lost_by_cat": {
+        "Hallucinated / Nonexistent Symbol or Module": 26
+      },
+      "fixed_open_failure_cats": {
+        "Other Runtime Error (UnboundLocalError)": 1,
+        "Undefined Symbol (NameError)": 17,
+        "API/State Runtime Error (AttributeError)": 5,
+        "API/State Runtime Error (KeyError)": 1,
+        "API/State Runtime Error (TypeError)": 2,
+        "Wrong Oracle (AssertionError)": 21,
+        "API/State Runtime Error (ValueError)": 5
+      },
+      "fixed_hermetic_failure_cats": {
+        "Other Runtime Error (UnboundLocalError)": 1,
+        "Undefined Symbol (NameError)": 17,
+        "API/State Runtime Error (AttributeError)": 5,
+        "API/State Runtime Error (KeyError)": 1,
+        "API/State Runtime Error (TypeError)": 2,
+        "Network/TLS/Proxy Error (OSError)": 1,
+        "Wrong Oracle (AssertionError)": 21,
+        "API/State Runtime Error (ValueError)": 5
+      }
+    }
+  },
+  "rq3_network": {
+    "qwen3_8b_all17": {
+      "FAIL_OPEN -> NON_NET_FAIL_HERM": 181,
+      "FAIL_OPEN -> NET_VIOL_HERM": 14,
+      "PASS_OPEN -> PASS_HERM": 103,
+      "PASS_OPEN -> NET_VIOL_HERM": 10
+    },
+    "qwen3_8b_core13": {
+      "FAIL_OPEN -> NON_NET_FAIL_HERM": 181,
+      "FAIL_OPEN -> NET_VIOL_HERM": 14,
+      "PASS_OPEN -> PASS_HERM": 103,
+      "PASS_OPEN -> NET_VIOL_HERM": 10
+    },
+    "qwen25_7b_core13": {
+      "FAIL_OPEN -> NON_NET_FAIL_HERM": 133,
+      "PASS_OPEN -> PASS_HERM": 62,
+      "FAIL_OPEN -> NET_VIOL_HERM": 4,
+      "PASS_OPEN -> NET_VIOL_HERM": 2
+    },
+    "deepseek_coder_67b_core13": {
+      "PASS_OPEN -> PASS_HERM": 61,
+      "FAIL_OPEN -> NON_NET_FAIL_HERM": 83,
+      "FAIL_OPEN -> NET_VIOL_HERM": 16,
+      "PASS_OPEN -> NET_VIOL_HERM": 29
+    },
+    "codellama_7b_core13": {
+      "PASS_OPEN -> PASS_HERM": 24,
+      "FAIL_OPEN -> NON_NET_FAIL_HERM": 52,
+      "PASS_OPEN -> NET_VIOL_HERM": 1
+    }
+  },
+  "rq4_flakiness_and_mock": {
+    "hermetic_n20": {
+      "qwen3_8b": {
+        "instances": 13,
+        "collected_tests": 308,
+        "total_test_executions": 6160,
+        "flaky_tests": 0,
+        "flaky_details": []
+      },
+      "qwen25_7b": {
+        "instances": 8,
+        "collected_tests": 201,
+        "total_test_executions": 4020,
+        "flaky_tests": 0,
+        "flaky_details": []
+      },
+      "deepseek_coder_67b": {
+        "instances": 10,
+        "collected_tests": 189,
+        "total_test_executions": 3780,
+        "flaky_tests": 0,
+        "flaky_details": []
+      },
+      "codellama_7b": {
+        "instances": 8,
+        "collected_tests": 77,
+        "total_test_executions": 1540,
+        "flaky_tests": 0,
+        "flaky_details": []
+      }
+    },
+    "open_n10": {
+      "qwen3_8b": {
+        "instances": 2,
+        "tested_count": 38,
+        "flaky_tests": 0,
+        "flaky_details": []
+      },
+      "qwen25_7b": {
+        "instances": 1,
+        "tested_count": 26,
+        "flaky_tests": 0,
+        "flaky_details": []
+      },
+      "deepseek_coder_67b": {
+        "instances": 3,
+        "tested_count": 63,
+        "flaky_tests": 0,
+        "flaky_details": []
+      },
+      "codellama_7b": {
+        "instances": 1,
+        "tested_count": 3,
+        "flaky_tests": 0,
+        "flaky_details": []
+      }
+    },
+    "mock_remediation": {
+      "qwen3_8b": {
+        "minimal_200": {
+          "total_viol": 24,
+          "rescued": 16,
+          "rescue_rate_pct": 66.67,
+          "rescue_ci": [
+            46.71,
+            82.03
+          ],
+          "bug_det": 0,
+          "still_fail_reasons": {
+            "EXCEPTION:ValueError": 5,
+            "EXCEPTION:TypeError": 3
+          },
+          "non_viol_gained": [
+            [
+              "psf__requests-1724",
+              "test_gen_00.py::test_request_with_unicode_method",
+              "EXCEPTION",
+              "UnicodeEncodeError"
+            ],
+            [
+              "psf__requests-1724",
+              "test_gen_00.py::test_request_with_non_ascii_method",
+              "EXCEPTION",
+              "UnicodeEncodeError"
+            ],
+            [
+              "psf__requests-2317",
+              "test_gen_01.py::test_request_with_non_ascii_data",
+              "EXCEPTION",
+              "UnicodeEncodeError"
+            ],
+            [
+              "psf__requests-2317",
+              "test_gen_02.py::test_request_with_utf8_encoding",
+              "EXCEPTION",
+              "UnicodeEncodeError"
+            ]
+          ],
+          "non_viol_broken": [
+            [
+              "psf__requests-1724",
+              "test_gen_02.py::test_request_with_non_ascii_method",
+              "EXCEPTION",
+              "ValueError"
+            ],
+            [
+              "psf__requests-2317",
+              "test_gen_00.py::test_session_request_with_invalid_url",
+              "EXCEPTION",
+              "EXCEPTION"
+            ]
+          ]
+        },
+        "http_echo": {
+          "total_viol": 24,
+          "rescued": 16,
+          "rescue_rate_pct": 66.67,
+          "rescue_ci": [
+            46.71,
+            82.03
+          ],
+          "bug_det": 0,
+          "still_fail_reasons": {
+            "EXCEPTION:ValueError": 5,
+            "EXCEPTION:TypeError": 3
+          },
+          "non_viol_gained": [
+            [
+              "psf__requests-1724",
+              "test_gen_00.py::test_request_with_unicode_method",
+              "EXCEPTION",
+              "UnicodeEncodeError"
+            ],
+            [
+              "psf__requests-1724",
+              "test_gen_00.py::test_request_with_non_ascii_method",
+              "EXCEPTION",
+              "UnicodeEncodeError"
+            ],
+            [
+              "psf__requests-2317",
+              "test_gen_01.py::test_request_with_non_ascii_data",
+              "EXCEPTION",
+              "UnicodeEncodeError"
+            ],
+            [
+              "psf__requests-2317",
+              "test_gen_02.py::test_request_with_utf8_encoding",
+              "EXCEPTION",
+              "UnicodeEncodeError"
+            ]
+          ],
+          "non_viol_broken": [
+            [
+              "psf__requests-1724",
+              "test_gen_02.py::test_request_with_non_ascii_method",
+              "EXCEPTION",
+              "ValueError"
+            ],
+            [
+              "psf__requests-2317",
+              "test_gen_00.py::test_session_request_with_invalid_url",
+              "EXCEPTION",
+              "EXCEPTION"
+            ]
+          ]
+        }
+      },
+      "qwen25_7b": {
+        "minimal_200": {
+          "total_viol": 6,
+          "rescued": 3,
+          "rescue_rate_pct": 50.0,
+          "rescue_ci": [
+            18.76,
+            81.24
+          ],
+          "bug_det": 0,
+          "still_fail_reasons": {
+            "EXCEPTION:KeyError": 1,
+            "ASSERTION_FAILED:AssertionError": 2
+          },
+          "non_viol_gained": [],
+          "non_viol_broken": []
+        },
+        "http_echo": {
+          "total_viol": 6,
+          "rescued": 3,
+          "rescue_rate_pct": 50.0,
+          "rescue_ci": [
+            18.76,
+            81.24
+          ],
+          "bug_det": 0,
+          "still_fail_reasons": {
+            "EXCEPTION:KeyError": 1,
+            "ASSERTION_FAILED:AssertionError": 2
+          },
+          "non_viol_gained": [],
+          "non_viol_broken": []
+        }
+      },
+      "deepseek_coder_67b": {
+        "minimal_200": {
+          "total_viol": 45,
+          "rescued": 34,
+          "rescue_rate_pct": 75.56,
+          "rescue_ci": [
+            61.33,
+            85.76
+          ],
+          "bug_det": 0,
+          "still_fail_reasons": {
+            "ASSERTION_FAILED:AssertionError": 10,
+            "EXCEPTION:KeyError": 1
+          },
+          "non_viol_gained": [],
+          "non_viol_broken": []
+        },
+        "http_echo": {
+          "total_viol": 45,
+          "rescued": 34,
+          "rescue_rate_pct": 75.56,
+          "rescue_ci": [
+            61.33,
+            85.76
+          ],
+          "bug_det": 0,
+          "still_fail_reasons": {
+            "ASSERTION_FAILED:AssertionError": 10,
+            "EXCEPTION:KeyError": 1
+          },
+          "non_viol_gained": [],
+          "non_viol_broken": []
+        }
+      },
+      "codellama_7b": {
+        "minimal_200": {
+          "total_viol": 1,
+          "rescued": 1,
+          "rescue_rate_pct": 100.0,
+          "rescue_ci": [
+            20.65,
+            100.0
+          ],
+          "bug_det": 0,
+          "still_fail_reasons": {},
+          "non_viol_gained": [],
+          "non_viol_broken": []
+        },
+        "http_echo": {
+          "total_viol": 1,
+          "rescued": 1,
+          "rescue_rate_pct": 100.0,
+          "rescue_ci": [
+            20.65,
+            100.0
+          ],
+          "bug_det": 0,
+          "still_fail_reasons": {},
+          "non_viol_gained": [],
+          "non_viol_broken": []
+        }
+      }
+    }
+  },
+  "static_oracles": {
+    "qwen3_8b": {
+      "ALL_17": {
+        "syn_err_files": 0,
+        "regex_test_defs_in_syn_err": 0,
+        "zero_fn_files": 7,
+        "zero_fn_cats": {
+          "Top-Level Script (no def test_)": 5,
+          "Markdown/Prose Dump": 1,
+          "Empty/Definitions Only": 1
+        },
+        "files_with_mock_import": 5,
+        "files_using_mock": 7,
+        "ast_total_recounted": 423,
+        "zero_oracle_ast": 13,
+        "tautological_ast": 2,
+        "func_url_cm": {
+          "tp": 24,
+          "fp": 54,
+          "fn": 0,
+          "tn": 230
+        },
+        "scope_url_cm": {
+          "tp": 24,
+          "fp": 54,
+          "fn": 0,
+          "tn": 230
+        }
+      },
+      "CORE_13": {
+        "syn_err_files": 0,
+        "regex_test_defs_in_syn_err": 0,
+        "zero_fn_files": 2,
+        "zero_fn_cats": {
+          "Top-Level Script (no def test_)": 1,
+          "Markdown/Prose Dump": 1
+        },
+        "files_with_mock_import": 5,
+        "files_using_mock": 7,
+        "ast_total_recounted": 369,
+        "zero_oracle_ast": 12,
+        "tautological_ast": 2,
+        "func_url_cm": {
+          "tp": 24,
+          "fp": 54,
+          "fn": 0,
+          "tn": 230
+        },
+        "scope_url_cm": {
+          "tp": 24,
+          "fp": 54,
+          "fn": 0,
+          "tn": 230
+        }
+      }
+    },
+    "qwen25_7b": {
+      "CORE_13": {
+        "syn_err_files": 1,
+        "regex_test_defs_in_syn_err": 0,
+        "zero_fn_files": 7,
+        "zero_fn_cats": {
+          "Top-Level Script (no def test_)": 7
+        },
+        "files_with_mock_import": 7,
+        "files_using_mock": 7,
+        "ast_total_recounted": 282,
+        "zero_oracle_ast": 0,
+        "tautological_ast": 0,
+        "func_url_cm": {
+          "tp": 3,
+          "fp": 26,
+          "fn": 3,
+          "tn": 169
+        },
+        "scope_url_cm": {
+          "tp": 6,
+          "fp": 59,
+          "fn": 0,
+          "tn": 136
+        }
+      }
+    },
+    "deepseek_coder_67b": {
+      "CORE_13": {
+        "syn_err_files": 5,
+        "regex_test_defs_in_syn_err": 73,
+        "zero_fn_files": 0,
+        "zero_fn_cats": {},
+        "files_with_mock_import": 5,
+        "files_using_mock": 5,
+        "ast_total_recounted": 288,
+        "zero_oracle_ast": 0,
+        "tautological_ast": 0,
+        "func_url_cm": {
+          "tp": 45,
+          "fp": 10,
+          "fn": 0,
+          "tn": 134
+        },
+        "scope_url_cm": {
+          "tp": 45,
+          "fp": 10,
+          "fn": 0,
+          "tn": 134
+        }
+      }
+    },
+    "codellama_7b": {
+      "CORE_13": {
+        "syn_err_files": 3,
+        "regex_test_defs_in_syn_err": 25,
+        "zero_fn_files": 15,
+        "zero_fn_cats": {
+          "Source Code Paraphrase/Helper": 7,
+          "Top-Level Script (no def test_)": 5,
+          "Empty/Definitions Only": 3
+        },
+        "files_with_mock_import": 0,
+        "files_using_mock": 1,
+        "ast_total_recounted": 103,
+        "zero_oracle_ast": 0,
+        "tautological_ast": 0,
+        "func_url_cm": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "tn": 74
+        },
+        "scope_url_cm": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 0,
+          "tn": 74
+        }
+      }
+    }
+  }
+}

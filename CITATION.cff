@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this artifact, please cite the manuscript and the archived release."
-title: "Replication Package: Quarantining Environmentally Fragile LLM-Generated Tests"
+title: "Replication Package: Why Do LLM-Generated Unit Tests Fail to Enter Continuous Integration? A Multi-Stage Empirical Study on SWE-bench Verified"
 type: software
 authors:
   - family-names: "Zhu"
@@ -9,16 +9,22 @@ authors:
   - family-names: "Yu"
     given-names: "Yawen"
     affiliation: "School of Information Science and Engineering, Qilu Normal University, Jinan, Shandong, China"
-version: "1.0.0"
-date-released: "2026-10-28"
+  - family-names: "Zhang"
+    given-names: "Hengyue"
+    affiliation: "School of Information Science and Engineering, Qilu Normal University, Jinan, Shandong, China"
+version: "2.0.0"
+date-released: "2026-11-19"
 license: MIT
 repository-code: "https://github.com/forgemorrow/llm-test-generation-quarantine"
 abstract: >
-  Replication package for the manuscript "Quarantining Environmentally Fragile
-  LLM-Generated Tests: A Project-Level Empirical Study on SWE-bench Verified".
-  Contains the static AST risk screener, dynamic shuffle profiler, four-tier
-  triage implementation, socket-guard instrumentation for hermetic CI, experiment
-  drivers, and the archived formal run with a 363-file SHA-256 manifest.
+  Replication package for the empirical study "Why Do LLM-Generated Unit Tests
+  Fail to Enter Continuous Integration? A Multi-Stage Empirical Study on
+  SWE-bench Verified". Contains the five-gate zero-leakage empirical audit logs,
+  per-test timeout resolutions, N=20 hermetic and N=10 open-network shuffle
+  repeatability logs, HTTP mock-remediation evaluations, analysis/figure/table
+  generation scripts (results/empirical_study_20261118/ and
+  scripts/empirical_study_20261118/), together with the archived baseline
+  artifacts and socket-guard instrumentation.
 keywords:
   - large language models
   - unit test generation

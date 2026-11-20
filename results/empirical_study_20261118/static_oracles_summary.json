@@ -1,0 +1,138 @@
+{
+  "qwen3_8b": {
+    "ALL_17": {
+      "syn_err_files": 0,
+      "regex_test_defs_in_syn_err": 0,
+      "zero_fn_files": 7,
+      "zero_fn_cats": {
+        "Top-Level Script (no def test_)": 5,
+        "Markdown/Prose Dump": 1,
+        "Empty/Definitions Only": 1
+      },
+      "files_with_mock_import": 5,
+      "files_using_mock": 7,
+      "ast_total_recounted": 423,
+      "zero_oracle_ast": 13,
+      "tautological_ast": 2,
+      "func_url_cm": {
+        "tp": 24,
+        "fp": 54,
+        "fn": 0,
+        "tn": 230
+      },
+      "scope_url_cm": {
+        "tp": 24,
+        "fp": 54,
+        "fn": 0,
+        "tn": 230
+      }
+    },
+    "CORE_13": {
+      "syn_err_files": 0,
+      "regex_test_defs_in_syn_err": 0,
+      "zero_fn_files": 2,
+      "zero_fn_cats": {
+        "Top-Level Script (no def test_)": 1,
+        "Markdown/Prose Dump": 1
+      },
+      "files_with_mock_import": 5,
+      "files_using_mock": 7,
+      "ast_total_recounted": 369,
+      "zero_oracle_ast": 12,
+      "tautological_ast": 2,
+      "func_url_cm": {
+        "tp": 24,
+        "fp": 54,
+        "fn": 0,
+        "tn": 230
+      },
+      "scope_url_cm": {
+        "tp": 24,
+        "fp": 54,
+        "fn": 0,
+        "tn": 230
+      }
+    }
+  },
+  "qwen25_7b": {
+    "CORE_13": {
+      "syn_err_files": 1,
+      "regex_test_defs_in_syn_err": 0,
+      "zero_fn_files": 7,
+      "zero_fn_cats": {
+        "Top-Level Script (no def test_)": 7
+      },
+      "files_with_mock_import": 7,
+      "files_using_mock": 7,
+      "ast_total_recounted": 282,
+      "zero_oracle_ast": 0,
+      "tautological_ast": 0,
+      "func_url_cm": {
+        "tp": 3,
+        "fp": 26,
+        "fn": 3,
+        "tn": 169
+      },
+      "scope_url_cm": {
+        "tp": 6,
+        "fp": 59,
+        "fn": 0,
+        "tn": 136
+      }
+    }
+  },
+  "deepseek_coder_67b": {
+    "CORE_13": {
+      "syn_err_files": 5,
+      "regex_test_defs_in_syn_err": 73,
+      "zero_fn_files": 0,
+      "zero_fn_cats": {},
+      "files_with_mock_import": 5,
+      "files_using_mock": 5,
+      "ast_total_recounted": 288,
+      "zero_oracle_ast": 0,
+      "tautological_ast": 0,
+      "func_url_cm": {
+        "tp": 45,
+        "fp": 10,
+        "fn": 0,
+        "tn": 134
+      },
+      "scope_url_cm": {
+        "tp": 45,
+        "fp": 10,
+        "fn": 0,
+        "tn": 134
+      }
+    }
+  },
+  "codellama_7b": {
+    "CORE_13": {
+      "syn_err_files": 3,
+      "regex_test_defs_in_syn_err": 25,
+      "zero_fn_files": 15,
+      "zero_fn_cats": {
+        "Source Code Paraphrase/Helper": 7,
+        "Top-Level Script (no def test_)": 5,
+        "Empty/Definitions Only": 3
+      },
+      "files_with_mock_import": 0,
+      "files_using_mock": 1,
+      "ast_total_recounted": 103,
+      "zero_oracle_ast": 0,
+      "tautological_ast": 0,
+      "func_url_cm": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "tn": 74
+      },
+      "scope_url_cm": {
+        "tp": 1,
+        "fp": 2,
+        "fn": 0,
+        "tn": 74
+      }
+    }
+  }
+}

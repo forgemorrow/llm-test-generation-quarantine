@@ -1,15 +1,40 @@
-# Replication Package — Quarantining Environmentally Fragile LLM-Generated Tests
+# Replication Package — Why Do LLM-Generated Unit Tests Fail to Enter Continuous Integration?
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB.svg)](https://www.python.org/)
 [![CI](https://github.com/forgemorrow/llm-test-generation-quarantine/actions/workflows/ci.yml/badge.svg)](https://github.com/forgemorrow/llm-test-generation-quarantine/actions/workflows/ci.yml)
 
-Artifact for the manuscript:
+Artifact for the empirical study manuscript:
 
-> **Quarantining Environmentally Fragile LLM-Generated Tests: A Project-Level Empirical Study on SWE-bench Verified**
-> Chaoyi Zhu, Qilu Normal University — submitted to *Journal of Systems and Software*
+> **Why Do LLM-Generated Unit Tests Fail to Enter Continuous Integration? A Multi-Stage Empirical Study on SWE-bench Verified**
+> Chaoyi Zhu, Yawen Yu, Hengyue Zhang — Qilu Normal University — submitted to *Journal of Systems and Software*
 
-This repository contains everything needed to inspect and re-run the study: the static AST risk screener, the dynamic shuffle profiler, the four-tier triage implementation, the socket-guard instrumentation used for hermetic CI, all experiment drivers, and the archived formal run.
+This repository contains the complete multi-stage empirical study dataset (`results/empirical_study_20261118/`), portable audit/analysis/figure/table scripts (`scripts/empirical_study_20261118/`), zero-leakage prompts, generated test suites across four open-weight LLMs (`Qwen3-8B`, `Qwen2.5-7B`, `DeepSeek-Coder-6.7B`, `CodeLlama-7B`), socket-guard instrumentation (`HERMETIC_CI=1`), and archived baseline artifacts.
+
+## Multi-Stage Empirical Study Artifacts (`empirical_study_20261118`)
+
+- **`results/empirical_study_20261118/`**: Raw audit outputs and verified summary metrics backing Tables 1–6 and Figures 1–4 of the manuscript:
+  - `empirical_funnel_audit.json` — Gate 1–5 per-file and per-test execution records across Core-13 (4 models) and All-17 (`Qwen3-8B`).
+  - `step1_gap_closure.json` — `-W ignore --tb=short` collection tracebacks, per-test open-network timeout resolutions, $N=20$ hermetic shuffle runs (15,500 executions), $N=10$ open-network shuffle runs (1,300 executions), and `Minimal-200` / `HTTP-Echo` mock remediation logs.
+  - `static_oracles_summary.json` — Static oracle metrics and function- vs. class/module-scope AST URL screening accuracy.
+  - `empirical_master_metrics.json` — Aggregated counts, 95% Wilson CIs, and paired Friedman/Holm-Wilcoxon statistics.
+  - `SHA256_MANIFEST.txt` — Byte-exact SHA-256 checksums for all 6 scripts and 4 JSON artifacts.
+- **`scripts/empirical_study_20261118/`**:
+  - `run_empirical_funnel_audit.py`, `run_step1_gap_closure.py` — End-to-end Ephemeral Git worktree audit drivers (require `data/repos/` checkouts at the pinned commits).
+  - `analyze_static_oracles.py`, `analyze_step1_complete.py` — Recompute `static_oracles_summary.json` and `empirical_master_metrics.json` directly from raw JSONs and `data/`.
+  - `generate_empirical_figures.py`, `generate_empirical_tables.py` — Regenerate all 4 vector figures (`.pdf`/`.png`) and 6 `elsarticle` LaTeX tables.
+
+### Reproduce All Summary Metrics, Tables, and Figures (Offline)
+
+```bash
+pip install pytest requests numpy scipy matplotlib
+python scripts/empirical_study_20261118/analyze_static_oracles.py
+python scripts/empirical_study_20261118/analyze_step1_complete.py
+python scripts/empirical_study_20261118/generate_empirical_figures.py
+python scripts/empirical_study_20261118/generate_empirical_tables.py
+```
+
+Custom output directories can be specified via `EMPIRICAL_FIGURES_OUT` and `EMPIRICAL_TABLES_OUT`.
 
 ## Pipeline Overview
 
